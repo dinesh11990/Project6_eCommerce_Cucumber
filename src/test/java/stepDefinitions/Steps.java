@@ -30,6 +30,7 @@ public class Steps {
 	public void user_Opens_URL(String url) {
 
 		driver.get(url);
+		driver.manage().window().maximize();
 	}
 
 	////Given("^\"(.*?)\" is elder to \"(.*?)\" and \"(.*?)\"$")
@@ -42,13 +43,14 @@ public class Steps {
 	}
 
 	@When("Click on Login")
-	public void click_on_Login() {
+	public void click_on_Login() throws InterruptedException {
 
 		lp.clickLogin();
+		Thread.sleep(3000);
 	}
 
 	@Then("Page Title should be \"(.*?)\"$")
-	public void page_Title_should_be(String title) {
+	public void page_Title_should_be(String title) throws InterruptedException {
 
 		if(driver.getPageSource().contains("Login was unsuccessful.")) {
 
@@ -59,6 +61,7 @@ public class Steps {
 
 			Assert.assertEquals(title, driver.getTitle());
 		}
+		Thread.sleep(3000);
 
 	}
 

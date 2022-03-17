@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="features", 
 glue= {"stepDefinitions"},
 dryRun=false,
-monochrome=true
+monochrome=true,
+plugin= {"pretty","html:test-output"}
 )
 
 public class Runner {
