@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+
+//Constructor 
 	
 	public WebDriver ldriver;
 	
@@ -14,7 +16,7 @@ public class LoginPage {
 		
 		ldriver = rdriver;
 		
-		PageFactory.initElements(rdriver, this);
+		PageFactory.initElements(ldriver, this);
 	}
 	
 //----------------------------------------------------	
@@ -36,7 +38,7 @@ public class LoginPage {
 	WebElement lkLogout;
 	
 	
-	//-------------------------------------------------
+	//---------Action Methods------------------------------
 	
 	public void setUserName(String uname) {
 		
