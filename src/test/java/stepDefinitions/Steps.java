@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 
 public class Steps extends BaseClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LoginPage lp;
 
 
@@ -21,9 +21,9 @@ public class Steps extends BaseClass {
 	public void user_Launch_Chrome_browser() {
 
 		System.setProperty("webdriver.chrome.driver","C:\\New folder\\chromedriver.exe");
-
-		driver=new ChromeDriver();
-
+		
+		driver = new ChromeDriver();
+		
 		lp=new LoginPage(driver);
 	}
 
@@ -91,6 +91,13 @@ public class Steps extends BaseClass {
 		
 	}
 
+	/*@When("^User clicks on customers Menu$")
+	public void user_clicks_on_customers_Menu() throws InterruptedException  {
+
+		Thread.sleep(3000);
+		addCust.clicksOnCustomersMenu();
+	}*/
+		
 	@When("^User click on customers Menu$")
 	public void user_click_on_customers_Menu() throws InterruptedException  {
 
@@ -150,6 +157,31 @@ public class Steps extends BaseClass {
 		
 		Assert.assertTrue(driver.findElement(By.tagName("body")).getText().contains("The new customer has been added successfully"));
 
+	}
+	
+	//----------------------Steps for searching a customer using Email ID---------------------------------
+	
+	@When("^Enter cutomer Email$")
+	public void enter_cutomer_Email()  {
+		
+		searchCust = new SearchCustomerPage(driver);
+		searchCust.setEmail("victoria_victoria@nopCommerce.com");
+		
+
+	}
+
+	@When("^Click on search button$")
+	public void click_on_search_button() throws InterruptedException  {
+		
+		searchCust.clickSearch();
+		Thread.sleep(3000);
+	}
+
+	@Then("^User should found Email in the Search table$")
+	public void user_should_found_Email_in_the_Search_table()  {
+
+		boolean status=searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
+		Assert.assertEquals(true, status);
 	}
 
 

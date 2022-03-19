@@ -5,12 +5,14 @@ import org.openqa.selenium.WebDriver;
 
 import com.krish.page_objects.AddcustomerPage;
 import com.krish.page_objects.LoginPage;
+import com.krish.page_objects.SearchCustomerPage;
 
 public class BaseClass {
 	
 	public WebDriver driver;
 	public LoginPage lp;
 	public AddcustomerPage addCust;
+	public SearchCustomerPage searchCust;
 	
 	
 	//Created for generating random string for Unique email

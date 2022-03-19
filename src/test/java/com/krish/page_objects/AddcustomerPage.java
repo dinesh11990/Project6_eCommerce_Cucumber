@@ -22,6 +22,7 @@ public class AddcustomerPage {
 	//-------------------------------Locators----------------------------------
 
 	By lnkCustomers_menu=By.xpath("//a[@href='#']//p[contains(text(),'Customers')]");
+	//By lnksCustomers_menu=By.linkText("Customers");
 	By lnkCustomers_menuitem=By.xpath("//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]");
 	By btnAddnew=By.linkText("Add new"); //Add new
 	By txtEmail=By.xpath("//input[@id='Email']");
@@ -52,6 +53,10 @@ public class AddcustomerPage {
 	public void clickOnCustomersMenu() {
 		ldriver.findElement(lnkCustomers_menu).click();
 	}
+	
+	/*public void clicksOnCustomersMenu() {
+		ldriver.findElement(lnksCustomers_menu).click();
+	}*/
 
 	public void clickOnCustomersMenuItem() {
 		ldriver.findElement(lnkCustomers_menuitem).click();

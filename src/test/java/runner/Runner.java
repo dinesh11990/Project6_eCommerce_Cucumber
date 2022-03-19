@@ -9,7 +9,8 @@ import cucumber.api.junit.Cucumber;
 glue= {"stepDefinitions"},
 dryRun=false,
 monochrome=true,
-plugin= {"pretty","html:test-output"}
+plugin= {"pretty","html:test-output"},
+tags= {"@Test2"}
 )
 
 public class Runner {
