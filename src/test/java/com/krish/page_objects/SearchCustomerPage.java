@@ -100,16 +100,31 @@ public class SearchCustomerPage {
 		boolean flag = false;
 
 		for (int i = 1; i <= getNoOfRows(); i++) {
-			String emailid = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[2]"))
-					.getText();
-
-
+			String emailid = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[2]")).getText();
 
 			System.out.println(emailid);
 
 			if (emailid.equals(email)) {
 				flag = true;
 				break;
+			}
+		}
+
+		return flag;
+
+	}
+	
+	public boolean searchCustomerByName(String Name) {
+		boolean flag = false;
+
+		for (int i = 1; i <= getNoOfRows(); i++) {
+			String name = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[3]")).getText();
+			
+			String names[]=name.split(" "); //Separating fname & lname
+			
+			if(names[0].equals("Victoria") && names[1].equals("Terces"));
+			{
+				flag = true;
 			}
 		}
 

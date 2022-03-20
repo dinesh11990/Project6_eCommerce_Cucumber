@@ -6,75 +6,43 @@ formatter.feature({
   "id": "customers",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 20,
-  "name": "Search Customer by EMailID",
+formatter.background({
+  "line": 3,
+  "name": "Below are the common steps for each scenario",
   "description": "",
-  "id": "customers;search-customer-by-emailid",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@Test2"
-    }
-  ]
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
-  "line": 21,
+  "line": 5,
   "name": "User Launch Chrome browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 22,
+  "line": 6,
   "name": "User Opens URL \"http://admin-demo.nopcommerce.com/login\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 23,
+  "line": 7,
   "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 8,
   "name": "Click on Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
-  "name": "User click on customers Menu",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "Click on customers Menu Item",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "Enter cutomer Email",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "Click on search button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 29,
-  "name": "User should found Email in the Search table",
+  "line": 9,
+  "name": "User can view Dashboard",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 30,
-  "name": "close browser",
-  "keyword": "And "
 });
 formatter.match({
   "location": "Steps.user_Launch_Chrome_browser()"
 });
 formatter.result({
-  "duration": 2166588800,
+  "duration": 2365898300,
   "status": "passed"
 });
 formatter.match({
@@ -87,7 +55,7 @@ formatter.match({
   "location": "Steps.user_Opens_URL(String)"
 });
 formatter.result({
-  "duration": 1844976800,
+  "duration": 1646865800,
   "status": "passed"
 });
 formatter.match({
@@ -104,52 +72,119 @@ formatter.match({
   "location": "Steps.user_enters_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "duration": 387123500,
+  "duration": 246179000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "duration": 7042864800,
+  "duration": 6837138800,
   "status": "passed"
+});
+formatter.match({
+  "location": "Steps.user_can_view_Dashboard()"
+});
+formatter.result({
+  "duration": 28304800,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 34,
+  "name": "Search Customer by Name",
+  "description": "",
+  "id": "customers;search-customer-by-name",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 33,
+      "name": "@Test3"
+    }
+  ]
+});
+formatter.step({
+  "line": 36,
+  "name": "User click on customers Menu",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 37,
+  "name": "Click on customers Menu Item",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "Enter customer FirstName",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "Enter customer LastName",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "Click on search button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 41,
+  "name": "User should found Name in the search table",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 42,
+  "name": "close browser",
+  "keyword": "And "
 });
 formatter.match({
   "location": "Steps.user_click_on_customers_Menu()"
 });
 formatter.result({
-  "duration": 3013588700,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.Steps.user_click_on_customers_Menu(Steps.java:105)\r\n\tat ✽.When User click on customers Menu(./features/Customers.feature:25)\r\n",
-  "status": "failed"
+  "duration": 3084667500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.click_on_customers_Menu_Item()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5834306100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Steps.enter_cutomer_Email()"
+  "location": "Steps.enter_customer_FirstName()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 605322300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.enter_customer_LastName()"
+});
+formatter.result({
+  "duration": 219535300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.click_on_search_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3132065800,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Steps.user_should_found_Email_in_the_Search_table()"
+  "location": "Steps.user_should_found_Name_in_the_search_table()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 259193500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 754152800,
+  "status": "passed"
 });
 });
