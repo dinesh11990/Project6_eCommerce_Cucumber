@@ -1,13 +1,22 @@
 package stepDefinitions;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.krish.page_objects.*;
+
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -16,21 +25,49 @@ public class Steps extends BaseClass {
 
 	public static WebDriver driver;
 	public LoginPage lp;
+	
+	//Before is the cucumber hook which is not possible to separate it in BaseClass
+	@Before
+	public void setup() throws IOException {
+		
+		logger=Logger.getLogger("nopCommerce"); //Added logger
+		PropertyConfigurator.configure("Log4j.properties"); //Added logger
+		
+		
+		//Reading properties
+		configProp = new Properties();
+		//Load the File
+		FileInputStream configPropfile = new FileInputStream("config.properties");
+		configProp.load(configPropfile);
+		
+			
+		
+		String br=configProp.getProperty("browser");
+		
+		if(br.equals("chrome")) {
+		System.setProperty("webdriver.chrome.driver",configProp.getProperty("chromepath"));
+		driver = new ChromeDriver();
+		}
+		else if(br.equals("firefox")) {
+		System.setProperty("webdriver.gecko.driver",configProp.getProperty("firefoxpath"));
+		driver = new FirefoxDriver();
+		}
+		else if(br.equals("ie")) {
+		System.setProperty("webdriver.ie.driver",configProp.getProperty("iepath"));
+		driver = new InternetExplorerDriver();
+		}
+		
+		logger.info("******Launching browser**********");
+		
+	}
+	
 
 
 
 	@Given("User Launch Chrome browser")
 	public void user_Launch_Chrome_browser() {
 		
-		logger=Logger.getLogger("nopCommerce"); //Added logger
-		PropertyConfigurator.configure("Log4j.properties"); //Added logger
-		
 
-		System.setProperty("webdriver.chrome.driver","C:\\New folder\\chromedriver.exe");
-
-		driver = new ChromeDriver();
-
-		logger.info("******Launching browser**********");
 		lp=new LoginPage(driver);
 	}
 

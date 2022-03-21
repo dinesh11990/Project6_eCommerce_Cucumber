@@ -1,0 +1,12 @@
+2022-03-21 10:48:50 INFO  nopCommerce:33 - ******Launching browser**********
+2022-03-21 10:48:50 INFO  nopCommerce:40 - ******Opening URL**********
+2022-03-21 10:49:17 INFO  nopCommerce:49 - ******Providing Login Info**********
+2022-03-21 10:49:17 INFO  nopCommerce:56 - ******Started Login r**********
+2022-03-21 10:49:39 INFO  nopCommerce:209 - ******Searching customer by name**********
+2022-03-21 10:49:43 INFO  nopCommerce:90 - ******Closing browser**********
+2022-03-21 11:48:21 INFO  nopCommerce:60 - ******Launching browser**********
+2022-03-21 11:48:21 INFO  nopCommerce:77 - ******Opening URL**********
+2022-03-21 11:48:26 INFO  nopCommerce:86 - ******Providing Login Info**********
+2022-03-21 11:48:26 INFO  nopCommerce:93 - ******Started Login r**********
+2022-03-21 11:48:46 INFO  nopCommerce:246 - ******Searching customer by name**********
+2022-03-21 11:48:49 INFO  nopCommerce:127 - ******Closing browser**********

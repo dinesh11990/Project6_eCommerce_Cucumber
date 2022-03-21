@@ -6,6 +6,10 @@ formatter.feature({
   "id": "customers",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 2538128800,
+  "status": "passed"
+});
 formatter.background({
   "line": 3,
   "name": "Below are the common steps for each scenario",
@@ -42,7 +46,7 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_browser()"
 });
 formatter.result({
-  "duration": 2365898300,
+  "duration": 163202400,
   "status": "passed"
 });
 formatter.match({
@@ -55,7 +59,7 @@ formatter.match({
   "location": "Steps.user_Opens_URL(String)"
 });
 formatter.result({
-  "duration": 1646865800,
+  "duration": 4183993300,
   "status": "passed"
 });
 formatter.match({
@@ -72,21 +76,21 @@ formatter.match({
   "location": "Steps.user_enters_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "duration": 246179000,
+  "duration": 246548300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "duration": 6837138800,
+  "duration": 11557233600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_can_view_Dashboard()"
 });
 formatter.result({
-  "duration": 28304800,
+  "duration": 15303800,
   "status": "passed"
 });
 formatter.scenario({
@@ -142,49 +146,49 @@ formatter.match({
   "location": "Steps.user_click_on_customers_Menu()"
 });
 formatter.result({
-  "duration": 3084667500,
+  "duration": 3108592200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.click_on_customers_Menu_Item()"
 });
 formatter.result({
-  "duration": 5834306100,
+  "duration": 5050545800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.enter_customer_FirstName()"
 });
 formatter.result({
-  "duration": 605322300,
+  "duration": 205832800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.enter_customer_LastName()"
 });
 formatter.result({
-  "duration": 219535300,
+  "duration": 198152400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.click_on_search_button()"
 });
 formatter.result({
-  "duration": 3132065800,
+  "duration": 3086687000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.user_should_found_Name_in_the_search_table()"
 });
 formatter.result({
-  "duration": 259193500,
+  "duration": 175894800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "duration": 754152800,
+  "duration": 661822800,
   "status": "passed"
 });
 });
