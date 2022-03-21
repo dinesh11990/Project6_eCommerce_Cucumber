@@ -1,7 +1,6 @@
 package stepDefinitions;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -30,6 +29,8 @@ public class Steps extends BaseClass {
 	@Before
 	public void setup() throws IOException {
 		
+		
+		//Logger
 		logger=Logger.getLogger("nopCommerce"); //Added logger
 		PropertyConfigurator.configure("Log4j.properties"); //Added logger
 		

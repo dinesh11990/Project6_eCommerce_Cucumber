@@ -10,3 +10,7 @@
 2022-03-21 11:48:26 INFO  nopCommerce:93 - ******Started Login r**********
 2022-03-21 11:48:46 INFO  nopCommerce:246 - ******Searching customer by name**********
 2022-03-21 11:48:49 INFO  nopCommerce:127 - ******Closing browser**********
+2022-03-21 12:45:31 INFO  nopCommerce:62 - ******Launching browser**********
+2022-03-21 12:45:32 INFO  nopCommerce:79 - ******Opening URL**********
+2022-03-21 12:45:33 INFO  nopCommerce:88 - ******Providing Login Info**********
+2022-03-21 12:45:34 INFO  nopCommerce:95 - ******Started Login r**********

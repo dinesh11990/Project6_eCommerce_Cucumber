@@ -1,5 +1,6 @@
 Feature: Login
 
+@sanity
 Scenario: Successful Login with Valid Credentials
 	
 	Given User Launch Chrome browser
@@ -11,7 +12,7 @@ Scenario: Successful Login with Valid Credentials
 	Then Page Title should be "Your store. Login"
 	And close browser
 	
-	
+@regression
 Scenario Outline: Login Data Driven
 
 	Given User Launch Chrome browser
