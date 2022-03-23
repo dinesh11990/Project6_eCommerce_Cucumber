@@ -14,3 +14,17 @@
 2022-03-21 12:45:32 INFO  nopCommerce:79 - ******Opening URL**********
 2022-03-21 12:45:33 INFO  nopCommerce:88 - ******Providing Login Info**********
 2022-03-21 12:45:34 INFO  nopCommerce:95 - ******Started Login r**********
+2022-03-23 09:12:23 INFO  nopCommerce:61 - ******Launching browser**********
+2022-03-23 09:12:23 INFO  nopCommerce:78 - ******Opening URL**********
+2022-03-23 09:12:25 INFO  nopCommerce:87 - ******Providing Login Info**********
+2022-03-23 09:12:26 INFO  nopCommerce:94 - ******Started Login r**********
+2022-03-23 09:12:51 INFO  nopCommerce:184 - ******Adding new customer**********
+2022-03-23 09:12:51 INFO  nopCommerce:185 - ******Providing customer details**********
+2022-03-23 09:12:58 INFO  nopCommerce:203 - ******Saving customer data**********
+2022-03-23 09:13:04 INFO  nopCommerce:128 - ******Closing browser**********
+2022-03-23 10:33:10 INFO  nopCommerce:61 - ******Launching browser**********
+2022-03-23 10:33:10 INFO  nopCommerce:78 - ******Opening URL**********
+2022-03-23 10:33:12 INFO  nopCommerce:87 - ******Providing Login Info**********
+2022-03-23 10:33:12 INFO  nopCommerce:94 - ******Started Login r**********
+2022-03-23 11:30:03 INFO  nopCommerce:61 - ******Launching browser**********
+2022-03-23 11:30:03 INFO  nopCommerce:78 - ******Opening URL**********

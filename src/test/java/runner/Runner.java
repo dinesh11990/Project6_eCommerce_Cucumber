@@ -10,7 +10,7 @@ glue= {"stepDefinitions"},
 dryRun=false,
 monochrome=true,
 plugin= {"pretty","html:test-output"},
-tags= {"@sanity","@regression"}
+tags= {"@sanity"}
 )
 
 public class Runner {

@@ -22,8 +22,8 @@ import cucumber.api.java.en.When;
 
 public class Steps extends BaseClass {
 
-	public static WebDriver driver;
-	public LoginPage lp;
+	//public static WebDriver driver;
+	//public LoginPage lp;
 	
 	//Before is the cucumber hook which is not possible to separate it in BaseClass
 	@Before
